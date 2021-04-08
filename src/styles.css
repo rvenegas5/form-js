@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.registry-section {
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045_960_720.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  width: 600px;
+  max-width: 100%;
+  background-color: rgba(34, 34, 34, 0.397);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 16px 1px rgba(39, 39, 39, 0.733);
+}
+
+.form-header {
+  background-color: rgba(0, 255, 255, 0.65);
+  padding: 20px 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.671);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.45);
+  font-size: 22px;
+}
+
+.form {
+  padding: 25px 40px;
+}
+
+.form-box {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.form-box input {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-box input:focus {
+  outline-color: rgba(128, 126, 126, 0.383);
+}
+
+.form-box .error-text {
+  color: rgb(255, 181, 181);
+  visibility: hidden;
+}
+
+.form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 255, 255, 0.65);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  font-weight: bold;
+  border: 1px solid rgba(0, 255, 255, 0.65);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form button:disabled {
+  background-color: rgb(168, 167, 167);
+  border: 1px solid rgb(168, 167, 167);
+  font-weight: 595;
+  color: rgb(0, 0, 0);
+}
+
+.form-box.form-error input {
+  border-bottom: 3px solid rgb(255, 0, 0);
+}
+
+.form-box.form-error .error-text {
+  visibility: visible;
+}
+
+.form-box.form-success input{
+  border-bottom: 3px solid rgba(24, 221, 204, 0.89);
+}
